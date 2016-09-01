@@ -3,14 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script type="text/javascript">
-      navigator.getUserMedia({ "audio": true}, use_stream, function() {});
 
-      function use_stream(stream) {
-        var audio_context = new AudioContext();
-        var microphone = audio_context.createMediaStreamSource(stream);
-      }
-    </script>
   </head>
   <body>
     <h1>{{ title }}</h1>

@@ -59,14 +59,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-getUserMedia({video: false, audio: true}, function (err, stream) {
-  if (err) {
-    console.log('failed');
-  }
-  else {
-    console.log('got a stream', stream);
-  }
-});
-
 
 module.exports = app;
